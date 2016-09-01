@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
 	// Define and initialize constant PI
-	const double PI = 3.14159265359;
+	const double PI = 3.14;
 	// Define variables for radius, height, volume
 	double radius,
 		height,
