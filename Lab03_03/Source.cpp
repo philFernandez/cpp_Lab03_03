@@ -22,16 +22,28 @@ int main()
 	cin >> radius;
 	cout << "Enter the height of a cylinder: ";
 	cin >> height;
+	cout << "-----------------------------" << "\n";
 
 	// Calculate the volume
-	volume = PI * radius * radius * height;
+	volume = PI * pow(radius, 2) * height;
 
 	// Display radius, height, volume to std::out
 	// Use setprecision(2) and fixed to round to two decimals
 	cout << setprecision(2) << fixed;
-	cout << "The radius is " << radius << "\n";
-	cout << "The height is " << height << "\n";
-	cout << "The volume is " << volume << "\n";
+	// Use setw(12) to keep results lined up
+	cout << "The radius is " << setw(12) << radius << "   |" << "\n";
+	cout << "The height is " << setw(12) << height << "   |" << "\n";
+	cout << "The volume is " << setw(12) << volume << "   |" << "\n";
+	cout << "-----------------------------" << "\n";
 
 	return 0;
 }
+
+
+
+
+
+
+
+
+
